@@ -14,6 +14,16 @@
 		A2560DA91C69CCE800F027EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2560DA71C69CCE800F027EE /* LaunchScreen.storyboard */; };
 		A2560DB41C69CCE800F027EE /* Qiita_clientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2560DB31C69CCE800F027EE /* Qiita_clientTests.swift */; };
 		A2560DBF1C69CCE800F027EE /* Qiita_clientUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2560DBE1C69CCE800F027EE /* Qiita_clientUITests.swift */; };
+		A2560DD11C69D3C700F027EE /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2560DCC1C69D3C700F027EE /* APIKit.framework */; };
+		A2560DD21C69D3C700F027EE /* APIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A2560DCC1C69D3C700F027EE /* APIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A2560DD31C69D3C700F027EE /* Himotoki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2560DCD1C69D3C700F027EE /* Himotoki.framework */; };
+		A2560DD41C69D3C700F027EE /* Himotoki.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A2560DCD1C69D3C700F027EE /* Himotoki.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A2560DD51C69D3C700F027EE /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2560DCE1C69D3C700F027EE /* Realm.framework */; };
+		A2560DD61C69D3C700F027EE /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A2560DCE1C69D3C700F027EE /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A2560DD71C69D3C700F027EE /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2560DCF1C69D3C700F027EE /* RealmSwift.framework */; };
+		A2560DD81C69D3C700F027EE /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A2560DCF1C69D3C700F027EE /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A2560DD91C69D3C700F027EE /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2560DD01C69D3C700F027EE /* Result.framework */; };
+		A2560DDA1C69D3C700F027EE /* Result.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A2560DD01C69D3C700F027EE /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +43,24 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		A2560DDB1C69D3C700F027EE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A2560DD61C69D3C700F027EE /* Realm.framework in Embed Frameworks */,
+				A2560DD41C69D3C700F027EE /* Himotoki.framework in Embed Frameworks */,
+				A2560DDA1C69D3C700F027EE /* Result.framework in Embed Frameworks */,
+				A2560DD81C69D3C700F027EE /* RealmSwift.framework in Embed Frameworks */,
+				A2560DD21C69D3C700F027EE /* APIKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		A2560D9B1C69CCE800F027EE /* Qiita-client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Qiita-client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2560D9E1C69CCE800F027EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +75,11 @@
 		A2560DBA1C69CCE800F027EE /* Qiita-clientUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Qiita-clientUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2560DBE1C69CCE800F027EE /* Qiita_clientUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Qiita_clientUITests.swift; sourceTree = "<group>"; };
 		A2560DC01C69CCE800F027EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2560DCC1C69D3C700F027EE /* APIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = APIKit.framework; path = Carthage/Build/iOS/APIKit.framework; sourceTree = "<group>"; };
+		A2560DCD1C69D3C700F027EE /* Himotoki.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Himotoki.framework; path = Carthage/Build/iOS/Himotoki.framework; sourceTree = "<group>"; };
+		A2560DCE1C69D3C700F027EE /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
+		A2560DCF1C69D3C700F027EE /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
+		A2560DD01C69D3C700F027EE /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +87,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2560DD51C69D3C700F027EE /* Realm.framework in Frameworks */,
+				A2560DD31C69D3C700F027EE /* Himotoki.framework in Frameworks */,
+				A2560DD91C69D3C700F027EE /* Result.framework in Frameworks */,
+				A2560DD71C69D3C700F027EE /* RealmSwift.framework in Frameworks */,
+				A2560DD11C69D3C700F027EE /* APIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +115,7 @@
 		A2560D921C69CCE800F027EE = {
 			isa = PBXGroup;
 			children = (
+				A2560DDC1C69D3CF00F027EE /* Carthage */,
 				A2560D9D1C69CCE800F027EE /* Qiita-client */,
 				A2560DB21C69CCE800F027EE /* Qiita-clientTests */,
 				A2560DBD1C69CCE800F027EE /* Qiita-clientUITests */,
@@ -125,6 +164,18 @@
 			path = "Qiita-clientUITests";
 			sourceTree = "<group>";
 		};
+		A2560DDC1C69D3CF00F027EE /* Carthage */ = {
+			isa = PBXGroup;
+			children = (
+				A2560DCC1C69D3C700F027EE /* APIKit.framework */,
+				A2560DCD1C69D3C700F027EE /* Himotoki.framework */,
+				A2560DCE1C69D3C700F027EE /* Realm.framework */,
+				A2560DCF1C69D3C700F027EE /* RealmSwift.framework */,
+				A2560DD01C69D3C700F027EE /* Result.framework */,
+			);
+			name = Carthage;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,6 +186,7 @@
 				A2560D971C69CCE800F027EE /* Sources */,
 				A2560D981C69CCE800F027EE /* Frameworks */,
 				A2560D991C69CCE800F027EE /* Resources */,
+				A2560DDB1C69D3C700F027EE /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -399,6 +451,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "Qiita-client/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "AK.Qiita-client";
@@ -410,6 +466,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "Qiita-client/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "AK.Qiita-client";

@@ -7,12 +7,28 @@
 //
 
 import UIKit
+import APIKit
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        let request = UserAPI()
+        Session.sendRequest(request) { result in
+            switch result {
+            case .Success(let response):
+                print(response)
+                
+            case .Failure(let error):
+                print("error: \(error)")
+            }
+        }
     }
 
     override func didReceiveMemoryWarning() {

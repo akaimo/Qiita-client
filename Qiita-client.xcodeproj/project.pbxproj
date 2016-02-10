@@ -24,6 +24,10 @@
 		A2560DD81C69D3C700F027EE /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A2560DCF1C69D3C700F027EE /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A2560DD91C69D3C700F027EE /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2560DD01C69D3C700F027EE /* Result.framework */; };
 		A2560DDA1C69D3C700F027EE /* Result.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A2560DD01C69D3C700F027EE /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A2560DDE1C69D7A700F027EE /* QiitaRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2560DDD1C69D7A700F027EE /* QiitaRequest.swift */; };
+		A2560DE11C69E95E00F027EE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2560DE01C69E95E00F027EE /* User.swift */; };
+		A2560DE41C69EFA400F027EE /* UserTeams.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2560DE31C69EFA400F027EE /* UserTeams.swift */; };
+		A2560DE61C69F67600F027EE /* UserAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2560DE51C69F67600F027EE /* UserAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +84,10 @@
 		A2560DCE1C69D3C700F027EE /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
 		A2560DCF1C69D3C700F027EE /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
 		A2560DD01C69D3C700F027EE /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		A2560DDD1C69D7A700F027EE /* QiitaRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QiitaRequest.swift; sourceTree = "<group>"; };
+		A2560DE01C69E95E00F027EE /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A2560DE31C69EFA400F027EE /* UserTeams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTeams.swift; sourceTree = "<group>"; };
+		A2560DE51C69F67600F027EE /* UserAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +144,8 @@
 		A2560D9D1C69CCE800F027EE /* Qiita-client */ = {
 			isa = PBXGroup;
 			children = (
+				A2560DDF1C69D7AF00F027EE /* APIKit */,
+				A2560DE21C69E96600F027EE /* Himotoki */,
 				A2560D9E1C69CCE800F027EE /* AppDelegate.swift */,
 				A2560DA01C69CCE800F027EE /* ViewController.swift */,
 				A2560DA21C69CCE800F027EE /* Main.storyboard */,
@@ -174,6 +184,24 @@
 				A2560DD01C69D3C700F027EE /* Result.framework */,
 			);
 			name = Carthage;
+			sourceTree = "<group>";
+		};
+		A2560DDF1C69D7AF00F027EE /* APIKit */ = {
+			isa = PBXGroup;
+			children = (
+				A2560DDD1C69D7A700F027EE /* QiitaRequest.swift */,
+				A2560DE51C69F67600F027EE /* UserAPI.swift */,
+			);
+			name = APIKit;
+			sourceTree = "<group>";
+		};
+		A2560DE21C69E96600F027EE /* Himotoki */ = {
+			isa = PBXGroup;
+			children = (
+				A2560DE01C69E95E00F027EE /* User.swift */,
+				A2560DE31C69EFA400F027EE /* UserTeams.swift */,
+			);
+			name = Himotoki;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,8 +336,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2560DE11C69E95E00F027EE /* User.swift in Sources */,
+				A2560DDE1C69D7A700F027EE /* QiitaRequest.swift in Sources */,
 				A2560DA11C69CCE800F027EE /* ViewController.swift in Sources */,
+				A2560DE41C69EFA400F027EE /* UserTeams.swift in Sources */,
 				A2560D9F1C69CCE800F027EE /* AppDelegate.swift in Sources */,
+				A2560DE61C69F67600F027EE /* UserAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

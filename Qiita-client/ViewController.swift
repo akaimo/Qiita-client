@@ -27,16 +27,16 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
-        let request = UserAPI()
-        Session.sendRequest(request) { result in
-            switch result {
-            case .Success(let response):
-                print(response)
-                
-            case .Failure(let error):
-                print("error: \(error)")
-            }
-        }
+//        let request = UserAPI()
+//        Session.sendRequest(request) { result in
+//            switch result {
+//            case .Success(let response):
+//                print(response)
+//                
+//            case .Failure(let error):
+//                print("error: \(error)")
+//            }
+//        }
     }
 
     override func didReceiveMemoryWarning() {

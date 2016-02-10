@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import APIKit
 
 class AuthViewController: UIViewController {
     @IBOutlet weak var nameTextField: UITextField!
@@ -33,8 +34,19 @@ class AuthViewController: UIViewController {
     }
     
     @IBAction func tapLoginBtn(sender: AnyObject) {
-        print(self.nameTextField.text)
-        print(self.passwordTextField.text)
+        guard let name = self.nameTextField.text else { return }
+        guard let password = self.passwordTextField.text else { return }
+        
+        let request = AuthAPI(name: name, password: password)
+        Session.sendRequest(request) { result in
+            switch result {
+            case .Success(let response):
+                print(response)
+                
+            case .Failure(let error):
+                print("error \(error)")
+            }
+        }
     }
 
 }

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A200FA761C6AFE5100152CDE /* AuthAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200FA751C6AFE5100152CDE /* AuthAPI.swift */; };
 		A200FA781C6B005C00152CDE /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200FA771C6B005C00152CDE /* Auth.swift */; };
+		A200FA7A1C6B021200152CDE /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200FA791C6B021200152CDE /* AuthViewController.swift */; };
 		A2560D9F1C69CCE800F027EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2560D9E1C69CCE800F027EE /* AppDelegate.swift */; };
 		A2560DA11C69CCE800F027EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2560DA01C69CCE800F027EE /* ViewController.swift */; };
 		A2560DA41C69CCE800F027EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2560DA21C69CCE800F027EE /* Main.storyboard */; };
@@ -70,6 +71,7 @@
 /* Begin PBXFileReference section */
 		A200FA751C6AFE5100152CDE /* AuthAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthAPI.swift; sourceTree = "<group>"; };
 		A200FA771C6B005C00152CDE /* Auth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
+		A200FA791C6B021200152CDE /* AuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		A2560D9B1C69CCE800F027EE /* Qiita-client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Qiita-client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2560D9E1C69CCE800F027EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2560DA01C69CCE800F027EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 				A2560DE21C69E96600F027EE /* Himotoki */,
 				A2560D9E1C69CCE800F027EE /* AppDelegate.swift */,
 				A2560DA01C69CCE800F027EE /* ViewController.swift */,
+				A200FA791C6B021200152CDE /* AuthViewController.swift */,
 				A2560DA21C69CCE800F027EE /* Main.storyboard */,
 				A2560DA51C69CCE800F027EE /* Assets.xcassets */,
 				A2560DA71C69CCE800F027EE /* LaunchScreen.storyboard */,
@@ -349,6 +352,7 @@
 				A2560DE41C69EFA400F027EE /* UserTeams.swift in Sources */,
 				A2560D9F1C69CCE800F027EE /* AppDelegate.swift in Sources */,
 				A2560DE61C69F67600F027EE /* UserAPI.swift in Sources */,
+				A200FA7A1C6B021200152CDE /* AuthViewController.swift in Sources */,
 				A200FA781C6B005C00152CDE /* Auth.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -20,6 +21,19 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="MJv-Hg-iUC">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="4VX-6o-WAL">
+                                        <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4VX-6o-WAL" id="mJx-3p-Yzo">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="vRK-ER-e3P" kind="show" identifier="Auth" id="a3g-FI-4u3"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -38,6 +52,68 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1267" y="304"/>
+        </scene>
+        <!--Auth View Controller-->
+        <scene sceneID="MbP-lM-hPl">
+            <objects>
+                <viewController id="vRK-ER-e3P" customClass="AuthViewController" customModule="Qiita_client" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="g4f-qe-aQ8"/>
+                        <viewControllerLayoutGuide type="bottom" id="38E-Aq-B9k"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Eaa-3z-cvS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7uH-SW-pg4">
+                                <rect key="frame" x="200" y="150" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="crZ-tQ-6d4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <action selector="endNameField:" destination="vRK-ER-e3P" eventType="editingDidEndOnExit" id="o7Y-pa-Of1"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dHJ-E9-F8N">
+                                <rect key="frame" x="200" y="210" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="d3Q-hI-9UR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="go" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                                <connections>
+                                    <action selector="endPasswordField:" destination="vRK-ER-e3P" eventType="editingDidEndOnExit" id="0k8-iG-jGn"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2xU-A1-OkF">
+                                <rect key="frame" x="281" y="290" width="38" height="30"/>
+                                <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="tapLoginBtn:" destination="vRK-ER-e3P" eventType="touchUpInside" id="Kv9-sz-1hh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dHJ-E9-F8N" firstAttribute="top" secondItem="7uH-SW-pg4" secondAttribute="bottom" constant="30" id="6sG-qw-XNX"/>
+                            <constraint firstItem="7uH-SW-pg4" firstAttribute="centerX" secondItem="Eaa-3z-cvS" secondAttribute="centerX" id="9DI-oX-OIC"/>
+                            <constraint firstItem="2xU-A1-OkF" firstAttribute="centerX" secondItem="Eaa-3z-cvS" secondAttribute="centerX" id="tn0-dm-rcP"/>
+                            <constraint firstItem="2xU-A1-OkF" firstAttribute="top" secondItem="dHJ-E9-F8N" secondAttribute="bottom" constant="50" id="yib-n4-cA7"/>
+                            <constraint firstItem="dHJ-E9-F8N" firstAttribute="centerX" secondItem="Eaa-3z-cvS" secondAttribute="centerX" id="yqP-IK-sqJ"/>
+                            <constraint firstItem="7uH-SW-pg4" firstAttribute="top" secondItem="Eaa-3z-cvS" secondAttribute="topMargin" constant="150" id="zL7-Ls-gNQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="loginBtn" destination="2xU-A1-OkF" id="tEk-Gr-p2b"/>
+                        <outlet property="nameTextField" destination="7uH-SW-pg4" id="187-rJ-0dQ"/>
+                        <outlet property="passwordTextField" destination="dHJ-E9-F8N" id="ejW-dQ-JgX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HRO-u9-yku" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2080" y="304"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="XMo-I6-7IM">

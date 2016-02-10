@@ -55,7 +55,13 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        print(indexPath.row)
+        switch indexPath.row {
+        case 0:
+            performSegueWithIdentifier("Auth",sender: nil)
+            
+        default:
+            print(indexPath.row)
+        }
     }
 
 }

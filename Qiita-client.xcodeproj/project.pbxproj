@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A200FA761C6AFE5100152CDE /* AuthAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200FA751C6AFE5100152CDE /* AuthAPI.swift */; };
+		A200FA781C6B005C00152CDE /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200FA771C6B005C00152CDE /* Auth.swift */; };
 		A2560D9F1C69CCE800F027EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2560D9E1C69CCE800F027EE /* AppDelegate.swift */; };
 		A2560DA11C69CCE800F027EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2560DA01C69CCE800F027EE /* ViewController.swift */; };
 		A2560DA41C69CCE800F027EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2560DA21C69CCE800F027EE /* Main.storyboard */; };
@@ -66,6 +68,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A200FA751C6AFE5100152CDE /* AuthAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthAPI.swift; sourceTree = "<group>"; };
+		A200FA771C6B005C00152CDE /* Auth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
 		A2560D9B1C69CCE800F027EE /* Qiita-client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Qiita-client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2560D9E1C69CCE800F027EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2560DA01C69CCE800F027EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -191,6 +195,7 @@
 			children = (
 				A2560DDD1C69D7A700F027EE /* QiitaRequest.swift */,
 				A2560DE51C69F67600F027EE /* UserAPI.swift */,
+				A200FA751C6AFE5100152CDE /* AuthAPI.swift */,
 			);
 			name = APIKit;
 			sourceTree = "<group>";
@@ -200,6 +205,7 @@
 			children = (
 				A2560DE01C69E95E00F027EE /* User.swift */,
 				A2560DE31C69EFA400F027EE /* UserTeams.swift */,
+				A200FA771C6B005C00152CDE /* Auth.swift */,
 			);
 			name = Himotoki;
 			sourceTree = "<group>";
@@ -338,10 +344,12 @@
 			files = (
 				A2560DE11C69E95E00F027EE /* User.swift in Sources */,
 				A2560DDE1C69D7A700F027EE /* QiitaRequest.swift in Sources */,
+				A200FA761C6AFE5100152CDE /* AuthAPI.swift in Sources */,
 				A2560DA11C69CCE800F027EE /* ViewController.swift in Sources */,
 				A2560DE41C69EFA400F027EE /* UserTeams.swift in Sources */,
 				A2560D9F1C69CCE800F027EE /* AppDelegate.swift in Sources */,
 				A2560DE61C69F67600F027EE /* UserAPI.swift in Sources */,
+				A200FA781C6B005C00152CDE /* Auth.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -576,6 +584,7 @@
 				A2560DC51C69CCE800F027EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A2560DC61C69CCE800F027EE /* Build configuration list for PBXNativeTarget "Qiita-clientTests" */ = {
 			isa = XCConfigurationList;
@@ -584,6 +593,7 @@
 				A2560DC81C69CCE800F027EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A2560DC91C69CCE800F027EE /* Build configuration list for PBXNativeTarget "Qiita-clientUITests" */ = {
 			isa = XCConfigurationList;
@@ -592,6 +602,7 @@
 				A2560DCB1C69CCE800F027EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

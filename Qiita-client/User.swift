@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import APIKit
 import Himotoki
 
 struct User: Decodable {

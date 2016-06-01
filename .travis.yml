@@ -9,7 +9,7 @@ install:
 - carthage bootstrap --platform ios
 script:
 - set -o pipefail
-- xcodebuild test -project Qiita-client.xcodeproj -scheme Qiita-client -sdk iphonesimulator
+- xcodebuild test -project Qiita-client.xcodeproj -scheme Qiita-client -destination 'platform=iOS Simulator,name=iPhone 6s'
   | xcpretty -c
 notifications:
   slack:

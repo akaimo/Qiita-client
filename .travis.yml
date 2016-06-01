@@ -6,7 +6,7 @@ cache:
 before_install:
 - brew update
 install:
-- carthage bootstrap --platform ios --no-use-binaries
+- carthage bootstrap --platform ios
 script:
 - set -o pipefail
 - xcodebuild test -project Qiita-client.xcodeproj -scheme Qiita-client -sdk iphonesimulator

@@ -41,7 +41,7 @@ class AuthViewController: UIViewController {
         Session.sendRequest(request) { result in
             switch result {
             case .Success(let response):
-                print(response)
+                QiitaAccessToken = response.token
                 
             case .Failure(let error):
                 print("error \(error)")

@@ -18,7 +18,12 @@ struct UserAPI: QiitaRequest {
     }
     
     var path: String {
-        return "/users/akaimo"
+        var path = "/user"
+        if let token = QiitaAccessToken {
+            path = path + "?token=" + token
+        }
+        print(path)
+        return path
     }
     
     func responseFromObject(object: AnyObject, URLResponse: NSHTTPURLResponse) -> Response? {

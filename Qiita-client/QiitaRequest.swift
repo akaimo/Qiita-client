@@ -10,6 +10,8 @@ import Foundation
 import APIKit
 import Himotoki
 
+var QiitaAccessToken: String?
+
 protocol QiitaRequest: RequestType {
     
 }

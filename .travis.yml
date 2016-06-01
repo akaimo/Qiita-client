@@ -7,7 +7,6 @@ cache:
 
 before_install:
   - brew update 
-  - brew upgrade carthage
 
 install:
   - carthage bootstrap --platform ios --no-use-binaries

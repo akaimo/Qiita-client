@@ -1,16 +1,16 @@
 language: objective-c
 osx_image: xcode7.3
-
 cache:
   directories:
-    - Carthage
-
+  - Carthage
 before_install:
-  - brew update 
-
+- brew update
 install:
-  - carthage bootstrap --platform ios --no-use-binaries
-
+- carthage bootstrap --platform ios --no-use-binaries
 script:
-  - set -o pipefail
-  - xcodebuild test -project Qiita-client.xcodeproj -scheme Qiita-client -sdk iphonesimulator | xcpretty -c
+- set -o pipefail
+- xcodebuild test -project Qiita-client.xcodeproj -scheme Qiita-client -sdk iphonesimulator
+  | xcpretty -c
+notifications:
+  slack:
+    secure: Eoc5QFq4KrT6Ykm7LC4PkullOotW3LZNXUbtbLUarl6kdRveu5roaSyzVV1B6seeOal920fvZQJz/obo4c/XxaW9qwuBty7Y32W6VdqiBZEnA+zIwMoG6NOZqgiFn68QfoLyYSBqQADpkHB1rIH5ELD/9enB6n4BsG9FH2KuPigsAMhefyTOIEeiIZ48htoJUDX/nBoC35uJ9FWe2fNEItuSFBBWNuAw+URs1FCVmImoq6N72v1udwlIY39zcTPNJr0nCtm9P6FeZ0/CSjt9rII4W2WPiFB9oW07rcX+rL7HM1MsQ5ZQENPgYSq3+Gu9JDwN5ceI6DSZTj0FZLQHrmKMZLpvN6NMRWkynlSS5z2XODB/6U2nId8mgkm2KlOYVFwzMXiE2q0esAdLSUI0ivdnUtya9gJexGX3sxtM2Kcpwk43mOEqmwdlZ1Eamoyn78iZlvPdafs8DmVgSCR6qTm0NT2027KFy34RdOD34dA4dQwqNyEpRTFOSXNYWeWfFtTX7fpTcJFr7RadetZFTAypZ8sm3+JG7CYnU5ZDImvhDIlIUAT7bH1apobClNTGVj45fFdtV2A6K5otiV6LoCF3l9KaYdwDBOTeXXfWTMAgyr8flKy7UZ+M7R5muPI2nAteGl4G+2JXK8FxRKnx3bRggH4Sbsg+4cKMyJ3pONc=

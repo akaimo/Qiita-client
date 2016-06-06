@@ -4,7 +4,7 @@ cache:
   directories:
   - Carthage/
 before_install:
-- brew update
+  #- brew update
 install:
   # - carthage bootstrap --platform ios
   - ./scripts/install.sh
